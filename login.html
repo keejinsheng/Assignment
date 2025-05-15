@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      background: url('image/login.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+    form {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 20px;
+      display: inline-block;
+    }
+    input {
+      margin: 10px;
+      padding: 10px;
+      width: 80%;
+      border-radius:10px;
+	  margin-bottom:10px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      border:2px solid;
+      border-radius:5px;
+	  margin-bottom:10px;
+      background-color: azure;
+      color: gray;
+      cursor: pointer;
+      transition-duration: 0.8s;
+    }
+
+    button:hover{
+        background-color: gray;
+        color: azure;
+
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome !</h1>
+  <form action="menu.html" method="post">
+    <input type="text" name="username" placeholder="Username or Email" required><br>
+    <input type="password" name="password" placeholder="Password" required><br>
+    <button type="submit">Login</button>
+  </form>
+  <p>Don't have an account? <a href="register.html" style="color: azure;">Register here</a>.</p>
+</body>
+</html>
